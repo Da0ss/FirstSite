@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ScalesPro Industrial - Весы для погрузчика</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1a1c1c",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary-fixed": "#e9e1df",
+                        "on-primary-container": "#005315",
+                        "surface-bright": "#f9f9f9",
+                        "surface": "#f9f9f9",
+                        "on-primary": "#ffffff",
+                        "pure-white": "#FFFFFF",
+                        "primary-fixed": "#6fff7a",
+                        "on-primary-fixed": "#002204",
+                        "on-secondary-container": "#5f6473",
+                        "surface-dim": "#dadada",
+                        "on-secondary-fixed-variant": "#424654",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "secondary-fixed": "#dee2f4",
+                        "on-tertiary-container": "#4b4645",
+                        "action-green": "#2CD14C",
+                        "tertiary-fixed-dim": "#cdc5c3",
+                        "surface-container-high": "#e8e8e8",
+                        "primary-container": "#2cd14c",
+                        "outline": "#6d7b69",
+                        "inverse-surface": "#2f3131",
+                        "on-surface-variant": "#3d4a3a",
+                        "primary-fixed-dim": "#44e35b",
+                        "surface-container-lowest": "#ffffff",
+                        "deep-navy": "#0C111D",
+                        "tertiary": "#635d5c",
+                        "secondary": "#595e6d",
+                        "tertiary-container": "#bcb4b2",
+                        "secondary-fixed-dim": "#c2c6d7",
+                        "error-container": "#ffdad6",
+                        "primary": "#006e1f",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#44e35b",
+                        "on-primary-fixed-variant": "#005315",
+                        "surface-charcoal": "#111827",
+                        "outline-variant": "#bccbb6",
+                        "on-secondary-fixed": "#161b28",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#1e1b1a",
+                        "industrial-gray": "#292524",
+                        "surface-container-low": "#f3f3f4",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-tertiary-fixed-variant": "#4b4644",
+                        "background": "#f9f9f9",
+                        "secondary-container": "#dee2f4",
+                        "surface-tint": "#006e1f",
+                        "surface-container-highest": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap": "80px",
+                        "component-gap": "16px",
+                        "margin-mobile": "16px",
+                        "unit": "8px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "label-bold": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "display-lg-mobile": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-surface-variant transition-all duration-300 h-20 flex items-center">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto">
+<a class="text-headline-sm font-headline-sm font-bold text-on-surface" href="#">ScalesPro Industrial</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-label-bold font-label-bold text-primary border-b-2 border-primary pb-1" href="#">Решения</a>
+<a class="text-label-bold font-label-bold text-on-surface-variant hover:text-action-green transition-colors duration-200" href="#">Услуги</a>
+<a class="text-label-bold font-label-bold text-on-surface-variant hover:text-action-green transition-colors duration-200" href="#">Контакты</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-action-green text-deep-navy px-6 py-2.5 font-label-bold text-label-bold rounded hover:brightness-95 active:scale-95 transition-all">
+                    Заказать
+                </button>
+</div>
+</div>
+</header>
+<main class="mt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[70vh] flex items-center bg-surface overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter w-full py-section-gap flex flex-col items-center text-center">
+<h1 class="font-display-lg text-display-lg md:text-display-lg max-w-4xl mb-6 text-on-surface">
+                    Точное взвешивание на ходу
+                </h1>
+<p class="font-body-lg text-body-lg max-w-2xl mb-12 text-on-surface-variant">
+                    Превратите ваш погрузчик в точный инструмент контроля грузов с нашими весовыми системами.
+                </p>
+<div class="w-full max-w-5xl rounded-xl overflow-hidden shadow-2xl">
+<img alt="Industrial environment showing modern warehouse logistics" class="w-full h-auto object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLuQqvXiH5PQ1zte6Q-xYdWvwVQTEYowPpjEXKJlEJPAkNAvSVj7R-8ehBVzGPOs3icAQArgJPWInK3fr0pqsxfVoFBS1V2zIYkoPQBHXa3RN5yE-j0VgeImp5TleDVUK4ByknTp3bnOwU4yrw8G9ScONXBCxViDzynIzVHmL6MCK6F9uaN1RmH0-zVWLwo-48NdZFDo3DS0zBWVoogLcFPoB8BbnhpI7iwC_-8JGRP2C-AvF4-bvySClznO"/>
+</div>
+</div>
+</section>
+<!-- Service & Support (Dark Section) -->
+<section class="bg-surface-charcoal text-pure-white py-section-gap">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
+<div class="relative rounded-xl overflow-hidden aspect-[4/3] group">
+<img alt="Support specialist analyzing industrial metrology data on a tablet" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" src="https://lh3.googleusercontent.com/aida/AP1WRLuQqvXiH5PQ1zte6Q-xYdWvwVQTEYowPpjEXKJlEJPAkNAvSVj7R-8ehBVzGPOs3icAQArgJPWInK3fr0pqsxfVoFBS1V2zIYkoPQBHXa3RN5yE-j0VgeImp5TleDVUK4ByknTp3bnOwU4yrw8G9ScONXBCxViDzynIzVHmL6MCK6F9uaN1RmH0-zVWLwo-48NdZFDo3DS0zBWVoogLcFPoB8BbnhpI7iwC_-8JGRP2C-AvF4-bvySClznO"/>
+</div>
+<div class="space-y-8">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg leading-tight">
+                        Сервис и поддержка
+                    </h2>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-lg">
+                        Мы не просто продаем оборудование, мы обеспечиваем полное сопровождение: от подбора датчиков до настройки программного обеспечения для вашего бизнеса.
+                    </p>
+<button class="bg-pure-white text-surface-charcoal px-8 py-4 font-label-bold text-label-bold flex items-center gap-3 hover:bg-action-green hover:text-deep-navy transition-colors">
+<span class="material-symbols-outlined">call</span>
+                        Получить расчет
+                    </button>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-gutter">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-center mb-section-gap">
+                    Наши услуги
+                </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="group border border-surface-variant bg-surface-container-lowest p-2 transition-all hover:border-action-green">
+<div class="overflow-hidden aspect-video mb-6">
+<img alt="Professional engineer calibrating heavy machinery sensors" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLvmcZ4k2ii_cSUrlQrRtJhY3-sunmVUoBANC4lJPVKeU8UVKR6ldzuT-thCHGyfprb_r-C-y4UrOJeaJN2csf4LR9uxtFZhKli128L0KEp2m01AwxkhR7oAKssxNg6FG0f8YJa9hhm607fr0UXif6vnD1ZSQ4hegdrp6YsAZ2FIObGVCsGEZOlGDjkT7NN9EJ9lQRmq-onk8trqRxnSVumdBPnPm1W9JKUznGpHBDqFag3kzIBl0S1qiU4F"/>
+</div>
+<div class="px-4 pb-6">
+<h3 class="font-headline-sm text-headline-sm mb-3">Калибровка</h3>
+<p class="font-body-md text-body-md text-on-secondary-container">Выезд инженера для точной калибровки датчиков на месте.</p>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="group border border-surface-variant bg-surface-container-lowest p-2 transition-all hover:border-action-green">
+<div class="overflow-hidden aspect-video mb-6">
+<img alt="Industrial technician installing weighing system into a forklift frame" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLuLUbm_nfPtgxcr9Fco696sNLcxyRPCfJGuiTpWe1dvxUwAUphkv5HdZfr8Hb1r1y9nWPZia_UH9byZZ-jLFgDengMfTaExe5HJ37Nq834UPNvOl43aLraJhKURvcjspK6dBewrtLojFm-ue3VG_YrGmMC011UkWHJ6XDpzJ6khyXI2HBH6fMFRdrnOEgikrVS5_nr_cs2lFHZvJw67wGqhKrY_8u3U7Q_EcqFQL9hgHwjzEY9qKmQnnMDz"/>
+</div>
+<div class="px-4 pb-6">
+<h3 class="font-headline-sm text-headline-sm mb-3">Профессиональный монтаж</h3>
+<p class="font-body-md text-body-md text-on-secondary-container">Профессиональный монтаж весовых систем в раму погрузчика с сохранением заводских характеристик техники.</p>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="group border border-surface-variant bg-surface-container-lowest p-2 transition-all hover:border-action-green">
+<div class="overflow-hidden aspect-video mb-6">
+<img alt="Technical specialist adjusting digital scales control terminal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLvgY9nBulPx7tQhjy-dsvtenrZYUHVQEaphm2RFcjp9UBUfoN5PEacXQWtmm_7gjS8BktUpEE3uACWDridCQbMyxopUa_OrQUNBuVAl4G-p1EcZkao7kW-VBMlemUxj0u5PI4bllAWBcws77tnq5eZhRI_gmm1OFfdPVtNrj4Bv1gui1leRHJSUkaRN8vK6Oa1gJEUfACLYICQsWNXrr5eLgCljo6AgIgoYlyq3DcZIlNy2xY54FiU1BFbW"/>
+</div>
+<div class="px-4 pb-6">
+<h3 class="font-headline-sm text-headline-sm mb-3">Системная настройка</h3>
+<p class="font-body-md text-body-md text-on-secondary-container">Профессиональная настройка весов на погрузчике: проверяем точность, минимизируем погрешность.</p>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="group border border-surface-variant bg-surface-container-lowest p-2 transition-all hover:border-action-green">
+<div class="overflow-hidden aspect-video mb-6">
+<img alt="Verification of equipment against metrological standards in a clean lab" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLszvVX-f9lKMAdQvheZ5brojB_bkzLmVJgVH61HBOPvM_zvOSbPvts10wfytGydQVg_r3qpDZxwYCNXBqWqkYiblAY1ySAI8kOK1R4tIVanRrqustceTed1BwLszqR-wN-KeCytQQ-nChn5eikpDFgXgrOnIuLCTE0XrOCyOA7Q-EIlgHyNgoC2dyglZotNbOxBRYGiifFlbLErMX6snNQ1lj90-13LxzhmKvtZ3L6oI0n9KatqnlL3FvUQ"/>
+</div>
+<div class="px-4 pb-6">
+<h3 class="font-headline-sm text-headline-sm mb-3">Поверка</h3>
+<p class="font-body-md text-body-md text-on-secondary-container">Проверка оборудования на соответствие метрологическим стандартам.</p>
+</div>
+</div>
+<!-- Service 5 -->
+<div class="group border border-surface-variant bg-surface-container-lowest p-2 transition-all hover:border-action-green">
+<div class="overflow-hidden aspect-video mb-6">
+<img alt="Repair process involving sensor replacement and electronics diagnostics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLuRk1rItsgd9yw1Z7GvE-8DdLPYWkBUbXFbQ-TW5V9Ly0NqXxK8p5dfu5ZthYKz6jfTxRDJuA2oSazC1jUlvLWvXZnkBP6bk4SI2txDSYKTMtwBP6TIMhKoE5BBOiCXlBg1z9e5nriS56-sjKeGG8ETUTzN5evicuy2lzKCFyQ5h5k1K-7zBpfblDfEbcn9wG7hL8wTr-ou4-mrQ38lya8b5wOxLTSjNuPoiVKOcM0AMfHX-_Q4tJFzy_08"/>
+</div>
+<div class="px-4 pb-6">
+<h3 class="font-headline-sm text-headline-sm mb-3">Технический ремонт</h3>
+<p class="font-body-md text-body-md text-on-secondary-container">Замена тензодатчиков и ремонт индикаторных блоков.</p>
+</div>
+</div>
+<!-- Service 6 -->
+<div class="group border border-surface-variant bg-surface-container-lowest p-2 transition-all hover:border-action-green">
+<div class="overflow-hidden aspect-video mb-6">
+<img alt="Instructor training warehouse personnel on how to use digital weighing systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLthNSrfed-ddA5WEQQopX6o-CS7sWcr3bxnZnxVtqYita17DcM3HcQNwjyxNaEkGL_2BYikHH_VDfBNIuZqw2pnIqcTDXVMHCZn5OKU24FTKxeimq3er_TxRkXS74GrTZcEE6zxR7BD-xnuXQiQAUPsFCbkbfTfkINEfkFneo4RDQNzOJvgor_G80xeAeDNdudDGH9uQwIax15NUHNlEQu8jMEjAP9p2fln0ssygkAZbkAB5rvFgUHe4YJS"/>
+</div>
+<div class="px-4 pb-6">
+<h3 class="font-headline-sm text-headline-sm mb-3">Инструктаж</h3>
+<p class="font-body-md text-body-md text-on-secondary-container">Обучение персонала работе с весовым оборудованием.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Diagnostic Process -->
+<section class="py-section-gap bg-deep-navy text-pure-white">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+<!-- Progress Line (Desktop) -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-[2px] bg-action-green opacity-20"></div>
+<!-- Step 1 -->
+<div class="relative flex flex-col items-center text-center space-y-6">
+<div class="w-24 h-24 rounded-full bg-action-green text-deep-navy flex items-center justify-center font-display-lg text-display-lg-mobile z-10">1</div>
+<h3 class="font-headline-sm text-headline-sm">Диагностика</h3>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col items-center text-center space-y-6">
+<div class="w-24 h-24 rounded-full bg-action-green text-deep-navy flex items-center justify-center font-display-lg text-display-lg-mobile z-10">2</div>
+<h3 class="font-headline-sm text-headline-sm">Подбор решений</h3>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col items-center text-center space-y-6">
+<div class="w-24 h-24 rounded-full bg-action-green text-deep-navy flex items-center justify-center font-display-lg text-display-lg-mobile z-10">3</div>
+<h3 class="font-headline-sm text-headline-sm">Установка и запуск</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Components Section -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-component-gap">
+<!-- Component 1 -->
+<div class="bg-surface p-6 border border-surface-variant flex flex-col h-full">
+<img alt="High-precision industrial load cell sensors for warehouse scales" class="w-full h-64 object-cover mb-8" src="https://lh3.googleusercontent.com/aida/AP1WRLuBBmHBW_ZmznAkA04PYkG9J679g8cHFZFIusblXyXw2qbpuuHRyFb6qCDExz0qoAXJypupFw-5Tc5OLu5KPIV9CJ0AeQAyNvrvmDu6qUe2nWQUHal38wjLjQJg_fCgRx5UlAebSpG64UNkEXSMnxSJ91NxQDFq_ETJTmXuYrTaKxCJzbvO9PrvTyxe7RuLVF2TmskO6bKRQgNOxhhq8MEHjpUmeJpT8rfGrpbhbbsoV_4JspJJSNsMf8M"/>
+<h3 class="font-headline-sm text-headline-sm mb-4">Датчики</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Надежные датчики для работы в суровых складских условиях. Защита от перегрузок и влаги.</p>
+</div>
+<!-- Component 2 -->
+<div class="bg-surface p-6 border border-surface-variant flex flex-col h-full">
+<img alt="Forklift driver terminal with bright LED display and intuitive controls" class="w-full h-64 object-cover mb-8" src="https://lh3.googleusercontent.com/aida/AP1WRLuOK37gJ6tWgyYz6pFyhMSCQUKYIIX4grogNRpElFf96VI998WSr7fMIlla2WRc57LwyYRuYNWlgpxF4Onue47SV4bdsblDorJa4Hh4wRS4Ar1loZGTfk8JAw1iqVFTCPDPq72RHLAu_Axf5ZstbdqY292gIOywweu1YkX0moUAjJXiU_0SdfKbbkWFNjABjAwewxfVu1TmyIpvLdfgx_8mec7I3PRoNtIp2RjrE8hKLXtyiiVyeWWWn50G"/>
+<h3 class="font-headline-sm text-headline-sm mb-4">Терминал управления</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Компактный дисплей для оператора. Яркая индикация и интуитивно понятный интерфейс.</p>
+</div>
+<!-- Component 3 -->
+<div class="bg-surface p-6 border border-surface-variant flex flex-col h-full">
+<img alt="Universal mounting kit for quick installation of weighing systems on various forklift models" class="w-full h-64 object-cover mb-8" src="https://lh3.googleusercontent.com/aida/AP1WRLt547nV2DBSCo1QP79pjSjGfsNYoaJhiIg9PaUaLHuWR18weL-dMGFpj8U3glnq4c1xZA8gqSjogNE4TtALMyl3Xy1xgxqcq1WBOcYSH7JM93_tb29SqsLyHowsY_wHP01T5VOUIJ9jWIS-Pt5z51Cfb47kPXaNeVv9Sao3WRIs9L2t-VFZFa6FcnaSihhUTrLtqxlGjtsZR7reMy6MruSu7deTRKSLuJ5ITPGtaZ9-xBsByiSt2WQOd5E"/>
+<h3 class="font-headline-sm text-headline-sm mb-4">Комплект</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Универсальный крепеж для быстрой установки на любые модели вилочных погрузчиков.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-section-gap bg-surface-charcoal text-center text-pure-white relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 50% 50%, #2CD14C 0%, transparent 70%);"></div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-4">Свяжитесь с нами прямо сейчас</h2>
+<p class="font-headline-sm text-headline-sm text-action-green mb-12">Готовы к работе?</p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<a class="inline-flex items-center justify-center gap-3 px-10 py-5 bg-action-green text-deep-navy font-label-bold text-label-bold rounded-lg hover:shadow-lg hover:shadow-action-green/20 transition-all" href="tel:+77026060234">
+<span class="material-symbols-outlined">phone_in_talk</span>
+                        +7 702 606 02 34
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-charcoal border-t border-industrial-gray">
+<div class="max-w-container-max mx-auto px-gutter py-16 grid grid-cols-1 md:grid-cols-4 gap-section-gap">
+<div class="space-y-4">
+<div class="text-headline-sm font-headline-sm font-bold text-pure-white">ScalesPro</div>
+<p class="text-label-sm font-label-sm text-surface-variant">Промышленная метрология и весовые системы для современной логистики.</p>
+</div>
+<div>
+<h4 class="text-label-bold font-label-bold text-action-green mb-6">Навигация</h4>
+<ul class="space-y-4">
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Решения</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Услуги</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Диагностика</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-bold font-label-bold text-action-green mb-6">Компания</h4>
+<ul class="space-y-4">
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-pure-white transition-colors" href="#">О нас</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Контакты</a></li>
+<li><a class="text-label-sm font-label-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Политика конфиденциальности</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-bold font-label-bold text-action-green mb-6">Контакты</h4>
+<div class="flex items-center gap-2 text-surface-variant mb-4">
+<span class="material-symbols-outlined text-action-green">location_on</span>
+<span class="text-label-sm font-label-sm">Казахстан, Алматы</span>
+</div>
+<div class="flex items-center gap-2 text-surface-variant">
+<span class="material-symbols-outlined text-action-green">call</span>
+<span class="text-label-sm font-label-sm">+7 702 606 02 34</span>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter py-8 border-t border-industrial-gray text-center">
+<p class="text-label-sm font-label-sm text-on-secondary-container">© 2024 ScalesPro Industrial Metrology. All rights reserved.</p>
+</div>
+</footer>
+<!-- Cookie Banner (from reference image) -->
+<div class="fixed bottom-gutter right-gutter z-[100] w-full max-w-md bg-pure-white shadow-2xl p-6 border border-surface-variant rounded-xl hidden md:block" id="cookie-banner">
+<h4 class="font-label-bold text-label-bold mb-2">We use cookies</h4>
+<p class="text-label-sm font-label-sm text-on-secondary-container mb-6">
+            This website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent.
+        </p>
+<div class="space-y-3">
+<button class="w-full bg-deep-navy text-pure-white py-3 font-label-bold text-label-bold rounded hover:bg-on-surface transition-colors" onclick="document.getElementById('cookie-banner').style.display='none'">Accept all</button>
+<button class="w-full bg-surface-container text-on-secondary-container py-3 font-label-bold text-label-bold rounded hover:bg-surface-variant transition-colors" onclick="document.getElementById('cookie-banner').style.display='none'">Reject all</button>
+<button class="w-full text-label-sm font-label-sm text-secondary underline">Manage preferences</button>
+</div>
+</div>
+<script>
+        // Micro-interactions and effects
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('h-16', 'shadow-sm');
+                header.classList.remove('h-20');
+            } else {
+                header.classList.add('h-20');
+                header.classList.remove('h-16', 'shadow-sm');
+            }
+        });
+    </script>
+</body></html>
